@@ -1,0 +1,17 @@
+.pdf-container iframe{
+     margin-left: 70px;
+     display: flex;
+     flex: 1;
+     width: 1150px;
+     margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+     .pdf-container iframe{
+          margin-left: -8px;
+          width: 275px;
+          height: 200vh;
+     }
+}
+
+

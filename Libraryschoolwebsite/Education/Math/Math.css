@@ -1,0 +1,83 @@
+
+.nav{
+     background: black;
+     width: 1500px;
+     padding: 25px;
+     gap: 230px;
+     display: flex;
+}
+
+.nav a{
+     color: white;
+     font-size: 33px;
+     margin-top: 0px;
+     margin-left: 120px;
+     text-decoration: none;
+     position: relative;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav a:not(:last-child)::after {
+     content: '';
+     display: inline-block;
+     position: absolute;
+     right: -170px; /* Position the line at the right edge */
+     top: -20px;
+     height: 80px;
+     width: 1px; /* Thickness of the line */
+     background-color: white; /* Line color */
+ }
+
+.card-container{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     margin-top: 100px;
+     gap: 200px;
+     margin-left: -170px;
+}
+.card{
+     width: 200px;
+     background: white;
+     padding: 10px;
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0px 2px 4px rgb(255, 255, 255);
+}
+.card:hover{
+     background: orange;
+}
+.cardlink{
+     text-decoration: none;
+}
+
+.card-content{
+     color: black;
+}
+
+.card-content p {
+     margin-top: -15px;
+}
+
+.nav h1{
+     color: white;
+     margin-left: 530px;
+     font-size: 40px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+     *{
+          flex-direction: column;
+     }
+     .card-container{
+          margin-left: 20px;
+     }
+     .nav{
+          display: none;
+     }
+}         
+
+.searc{
+     display:none;
+}
